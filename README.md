@@ -29,8 +29,9 @@ Documented Cursor/VS Code customizations and agent rules.
 
 ### Custom coding rule (Ansible)
 
-- Use FQCN notation in playbooks and update existing code to FQCN where appropriate.
-- Trim unneeded whitespace that would cause lint errors.
+- Always use FQCN notation in playbooks, including updating existing code to FQCN where appropriate.
+- Always trim any unneeded whitespace that will cause linting errors.
+- Assume playbooks run from Ansible Automation Platform; variables not created in the playbook should come from surveys or `ansible.builtin.set_stats`.
 
 ### Custom safety rule (file changes)
 
